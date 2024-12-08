@@ -1,8 +1,9 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import pic from "./me.jpg"; // pic of me
 import { FaGithub } from 'react-icons/fa'; // github icon
 import { FaLinkedin } from 'react-icons/fa'; // linkedin icon
-import { FaInstagram } from "react-icons/fa"; // instagram icon
+import { SiLeetcode } from "react-icons/si"; // leetcode icon
 import { FaPython } from "react-icons/fa"; // python icon
 import { SiDjango } from "react-icons/si"; // django icon
 import { FaHtml5 } from "react-icons/fa"; // html icon
@@ -31,7 +32,7 @@ import { SiUipath } from "react-icons/si"; // uipath icon
 
 function Navbar(props) {
   return (
-    <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
+    <nav className="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
       <div className="container-fluid">
         {/* Brand Name */}
         <a className="navbar-brand" href="#home">
@@ -95,12 +96,12 @@ function Navbar(props) {
               </a>
             </li>
             <li className="nav-item">
-              <a href="https://www.instagram.com/jaimee.castaneda/"
+              <a href="https://leetcode.com/u/JaimeCast/"
               className="nav-link"
               target="_blank"
               rel="noopener noreferrer"
               >
-                <FaInstagram size={25}/>
+                <SiLeetcode size={25}/>
               </a>
             </li>
           </ul>
@@ -109,7 +110,35 @@ function Navbar(props) {
     </nav>
   );
 }
-/*
+
+function Intro() {
+  return (
+    <div className="container mt-5" id="home">
+      <div className="mb-4">
+        <div className="card-body d-flex align-items-center">
+          <div className="me-3">
+            <img 
+              src={pic} 
+              alt="Me" 
+              className="rounded-circle" 
+              width="165" 
+              height="175"
+            />
+          </div>
+          <div>
+            <h2 className="mb-1">Hey, I'm Jaime Castaneda</h2>
+            <p className="lead mt-3">
+              I'm a computer science student at DePaul University. In my free 
+              time, I like to go to the gym, hang out with my girlfriend, watch
+              movies and shows, and eat. My favorite show and restaurant currently are American Horror Story and Panda Express.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function Projects() {
   return (
     <div className="container">
@@ -135,12 +164,12 @@ function Projects() {
     </div>
   )
 }
-*/
+
 
 function Skills() {
   return (
-    <div className="container">
-      <h2 className="text-center mb-4" id="skills">Skills and Tools</h2>
+    <div className="container" id="skills">
+      <h2 className="text-center mb-4">Skills and Tools</h2>
 
       <div className="row">
         <div className="col-sm-4">
@@ -476,7 +505,8 @@ function App() {
   return (
     <>
     <Navbar name="Jaime Castaneda"/>
-    {/*<Projects />*/}
+    <Intro />
+    <Projects />
     <Skills />
     <Footer name="Jaime Castaneda" />
     </>
