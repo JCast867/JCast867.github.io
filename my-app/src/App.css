@@ -5,3 +5,21 @@
 #home {
   padding-top: 70px;
 }
+
+.skill-badge {
+  background-color: #d0d0d0;
+  /* Similar light gray background */
+  color: #000;
+  font-size: 0.84rem;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  border-radius: 9999px;
+  /* large radius for a pill shape */
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.skill-badge:hover {
+  background-color: #bbbbbb;
+  /* slightly darker on hover */
+}

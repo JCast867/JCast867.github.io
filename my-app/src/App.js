@@ -28,6 +28,12 @@ import { SiRstudioide } from "react-icons/si"; // rstudio icon
 import { SiPostman } from "react-icons/si"; // postman icon
 import { FaAws } from "react-icons/fa"; // aws icon
 import { SiUipath } from "react-icons/si"; // uipath icon
+import { BsBank2 } from "react-icons/bs"; // bank icon
+import { RiTodoFill } from "react-icons/ri"; // todo icon
+import { AiOutlineStock } from "react-icons/ai"; // stock icon
+import { FaBasketball } from "react-icons/fa6"; // basketball icon
+import { BiMoviePlay } from "react-icons/bi"; // movie icon
+import { IoMdChatbubbles } from "react-icons/io"; // chat icon
 
 
 function Navbar(props) {
@@ -146,23 +152,106 @@ function Projects() {
 
       <div className="row">
         <div className="col-lg-4">
-          <div className="card">
+          <div className="card mb-4">
             <div className="card-body text-center">
-              <h6 className="text-center mb-0">Full-Stack Finance Tracking Web Application</h6>
-              <p className="text-center mb-0">A finance tracking App</p>
+              <h6 className="text-center mb-1"><strong>Full-Stack Finance Tracking Web Application</strong></h6>
+              <div className="text-center mb-3"><BsBank2 size={50} /> </div>
+              <p className="text-center mb-3">A full-stack finance tracking application that was developed in a group
+                of 5 for our senior capstone class that got an 100%.
+              </p>
+              <div className="text-center d-flex flex-wrap justify-content-center align-items-center mb-1">
+                <span className="skill-badge me-2 mb-0">Python</span>
+                <span className="skill-badge me-2 mb-0">Django</span>
+                <span className="skill-badge me-2 mb-0">Bootstrap</span>
+                <span className="skill-badge me-2 mb-0">Docker</span>
+                <span className="skill-badge me-2 mb-0">Git</span>
+              </div>
             </div>
-            <div className="card-footer"><FaPython size="15" /> <SiDjango size="15" /> 
-            <FaHtml5 size="15" /> <FaBootstrap size="15" /> <FaDocker size="15" /></div>
           </div>
         </div>
-        <div className="col-lg-4">Hi</div>
-        <div className="col-lg-4">Hi</div>
-        <div className="col-lg-4">Hi</div>
-        <div className="col-lg-4">Hi</div>
-
+        <div className="col-lg-4">
+          <div className="card mb-4">
+            <div className="card-body text-center">
+              <h6 className="text-center mb-1"><strong>Todo Full-Stack Web Application</strong></h6>
+              <div className="text-center mb-3"><RiTodoFill size={50} /> </div>
+              <p className="text-center mb-3">A full-stack todo list application designed to track tasks 
+                that was developed in a group of 5 for our senior capstone class that got an 100%.
+              </p>
+              <div className="text-center d-flex flex-wrap justify-content-center align-items-center mb-1">
+                <span className="skill-badge me-2 mb-0">Python</span>
+                <span className="skill-badge me-2 mb-0">Django</span>
+                <span className="skill-badge me-2 mb-0">Bootstrap</span>
+                <span className="skill-badge me-2 mb-0">Docker</span>
+                <span className="skill-badge me-2 mb-0">Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-lg-4">
+          <div className="card mb-4">
+            <div className="card-body text-center">
+              <h6 className="text-center mb-1"><strong>Stock Trading System</strong></h6>
+              <div className="text-center mb-3"><AiOutlineStock size={50} /> </div>
+              <p className="text-center mb-3">Designed a stock trading system using object-oriented
+                programming using design patterns like factory, flyweight, singleton, facade, and factory. 
+              </p>
+              <div className="text-center d-flex flex-wrap justify-content-center align-items-center mb-1">
+                <span className="skill-badge me-2 mb-0">Java</span>
+                <span className="skill-badge me-2 mb-0">OOP</span>
+                <span className="skill-badge me-2 mb-0">GUI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-lg-4">
+          <div className="card mb-4">
+            <div className="card-body text-center">
+              <h6 className="text-center mb-1"><strong>NBA Points Analysis</strong></h6>
+              <div className="text-center mb-3"><FaBasketball size={50} /> </div>
+              <p className="text-center mb-3">Developed a model to accurately predict the points 
+                per game for NBA players. Conducted data exploration, data analysis, testing, and predictions.
+              </p>
+              <div className="text-center d-flex flex-wrap justify-content-center align-items-center mb-1">
+                <span className="skill-badge me-2 mb-0">SAS</span>
+                <span className="skill-badge me-2 mb-0">Linear Regression</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-lg-4">
+          <div className="card mb-4">
+            <div className="card-body text-center">
+              <h6 className="text-center mb-1"><strong>Automated Movie Rating Bot</strong></h6>
+              <div className="text-center mb-3"><BiMoviePlay size={50} /> </div>
+              <p className="text-center mb-3">Collaborated with the <i>Protiviti</i> team to design and
+              implement an automated bot to extract movie ratings from an Excel file.
+              </p>
+              <div className="text-center d-flex flex-wrap justify-content-center align-items-center mb-1">
+                <span className="skill-badge me-2 mb-0">UiPath</span>
+                <span className="skill-badge me-2 mb-0">Excel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-lg-4">
+          <div className="card mb-4">
+            <div className="card-body text-center">
+              <h6 className="text-center mb-1"><strong>Enhanced Chat System with File Transfers</strong></h6>
+              <div className="text-center mb-3"><IoMdChatbubbles size={50} /> </div>
+              <p className="text-center mb-3">Developed a client-server chat application enabling real-time 
+                messaging and secure binary file transfers between multiple clients.
+              </p>
+              <div className="text-center d-flex flex-wrap justify-content-center align-items-center mb-1">
+                <span className="skill-badge me-2 mb-0">Socket Programming</span>
+                <span className="skill-badge me-2 mb-0">Python</span>
+                <span className="skill-badge me-2 mb-0">Multithreading</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
 
