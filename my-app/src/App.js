@@ -34,6 +34,8 @@ import { AiOutlineStock } from "react-icons/ai"; // stock icon
 import { FaBasketball } from "react-icons/fa6"; // basketball icon
 import { BiMoviePlay } from "react-icons/bi"; // movie icon
 import { IoMdChatbubbles } from "react-icons/io"; // chat icon
+import { FaGraduationCap } from "react-icons/fa"; // graduation cap icon
+import { FaTrophy } from "react-icons/fa"; // trophy icon
 
 
 function Navbar(props) {
@@ -143,6 +145,38 @@ function Intro() {
       </div>
     </div>
   );
+}
+
+function Education() {
+  return (
+    <div className="container">
+      <h2 className="text-center mb-4">Education</h2>
+        <div className="row">
+          <div className="col-lg-6">
+            <div className="card mb-4">
+              <div className="card-body">
+                <div className="text-center mb-3"><FaGraduationCap size={25} /><strong> Current Program</strong></div>
+                <h6 className="text-center mb-3">Bachelor of Science in Computer Science | Minor in Data Science</h6>
+                <h6 className="text-center mb-3">Concentration: Software Development | Expected Graduation: <u>03/2025</u></h6>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-6">
+            <div className="card mb-4">
+              <div className="card-body">
+                <div className="text-center mb-3"><FaTrophy size={25} /> <strong>GPA and Achievements</strong></div>
+                <h6 className="text-center mb-2">GPA: <u>3.48</u>/4.00</h6>
+                <h6 className="text-center mb-4">3-time Dean's List Student</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  );
+}
+
+function ReleventCoursework() {
+
 }
 
 function Projects() {
@@ -595,6 +629,7 @@ function App() {
     <>
     <Navbar name="Jaime Castaneda"/>
     <Intro />
+    <Education />
     <Projects />
     <Skills />
     <Footer name="Jaime Castaneda" />
