@@ -1,5 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState } from "react";
 import pic from "./me.jpg"; // pic of me
 import { FaGithub } from 'react-icons/fa'; // github icon
 import { FaLinkedin } from 'react-icons/fa'; // linkedin icon
@@ -36,6 +37,8 @@ import { BiMoviePlay } from "react-icons/bi"; // movie icon
 import { IoMdChatbubbles } from "react-icons/io"; // chat icon
 import { FaGraduationCap } from "react-icons/fa"; // graduation cap icon
 import { FaTrophy } from "react-icons/fa"; // trophy icon
+// import { SiJunit5 } from "react-icons/si"; // junit icon. maybe will be used
+
 
 
 function Navbar(props) {
@@ -135,7 +138,7 @@ function Intro() {
           </div>
           <div>
             <h2 className="mb-1">Hey, I'm Jaime Castaneda</h2>
-            <p className="lead mt-3">
+            <p className="lead mt-3" id="education">
               I'm a computer science student at DePaul University. In my free 
               time, I like to go to the gym, hang out with my girlfriend, watch
               movies and shows, and eat. My favorite show and restaurant currently are American Horror Story and Panda Express.
@@ -149,7 +152,7 @@ function Intro() {
 
 function Education() {
   return (
-    <div className="container">
+    <div className="container" >
       <h2 className="text-center mb-4">Education</h2>
         <div className="row">
           <div className="col-lg-6">
@@ -175,7 +178,247 @@ function Education() {
   );
 }
 
-function ReleventCoursework() {
+export function RelevantCoursework() {
+  const [index, setIndex] = useState(0);
+
+  const courses = [
+  {
+    name: "Intro to Computer Science I/II",
+    points: [
+      "Programming",
+      "Python",
+      "Recursion",
+      "Object-Oriented Software",
+      "Webscraping"
+    ]
+  },
+  {
+    name: "Sophomore Lab in Applied Computing",
+    points: [
+      "Problem Solving",
+      "Java",
+      "Kotlin",
+      "AI/ML",
+      "Debugging"
+    ]
+  },
+  {
+    name: "Data Structures I/II",
+    points: [
+      "Java",
+      "Trees",
+      "Linked Lists",
+      "Stacks",
+      "Queues"
+    ]
+  },
+  {
+    name: "Design and Analysis of Algorithms",
+    points: [
+      "Run-time Analysis",
+      "Divide and Conquer",
+      "Dynamic Programming",
+      "Basic Graph Algorithm",
+      "Greedy Algorithms"
+    ]
+  },
+  {
+    name: "Automata Theory",
+    points: [
+      "Deteministic Finite Automata",
+      "Nondeteministic Finite Automata",
+      "Context-Free Language",
+      "Deterministic Context-Free Language",
+      "Push-Down Automata"
+    ]
+  },
+  {
+    name: "Concepts of Programming Languages",
+    points: [
+      "Scala",
+      "Functional Programming",
+      "Closures",
+      "Inheritance",
+      "Dynamic Dispatch"
+    ]
+  },
+  {
+    name: "Database Systems",
+    points: [
+      "SQL",
+      "Oracle SQL Developer",
+      "Queries",
+      "Data Models",
+      "Database Schemas"
+    ]
+  },
+  {
+    name: "Computer Systems I/II",
+    points: [
+      "C",
+      "Network Programming",
+      "Concurrent Programming",
+      "Caching",
+      "Virtual Memory"
+    ]
+  },
+  {
+    name: "Distributed Systems",
+    points: [
+      "Python",
+      "Socket Programming",
+      "Multithreading",
+      "Networking Protocols",
+      "Local Networks"
+    ]
+  },
+  {
+    name: "Foundations of Artificial Intelligence",
+    points: [
+      "Python",
+      "Search Algorithms",
+      "Propositional and First Order Logic",
+      "Markov Decision Process",
+      "Machine Learning"
+    ]
+  },
+  {
+    name: "Software Projects",
+    points: [
+      "Python",
+      "Django",
+      "Group Projects",
+      "Git and Github",
+      "HTML Bootstrap"
+    ]
+  },
+  {
+    name: "Data Analysis",
+    points: [
+      "R",
+      "Data Visualization",
+      "Data Collection",
+      "Confidence Intervals",
+      "Hypothesis Testing"
+    ]
+  },
+  {
+    name: "Software Testing",
+    points: [
+      "Java",
+      "Junit",
+      "Jira",
+      "Testing Techniques",
+      "Selenium IDE"
+    ]
+  },
+  {
+    name: "Object-Oriented Software Development",
+    points: [
+      "Java",
+      "Object-Oriented Principles",
+      "Object-Oriented Foundations",
+      "Exception Handling",
+      "Design Patterns"
+    ]
+  },
+  {
+    name: "Data Analysis & Regression",
+    points: [
+      "SAS",
+      "Linear Regression",
+      "Polynomial Regression Model",
+      "Logistic Regression",
+      "Model Validation"
+    ]
+  }
+  ];
+
+  const handlePrev = () => {
+    setIndex((prevIndex) =>
+      prevIndex === 0 ? courses.length - 1 : prevIndex - 1);
+  };
+
+  const handleNext = () => {
+    setIndex((prevIndex) => 
+      prevIndex === courses.length - 1 ? 0 : prevIndex + 1);
+  };
+
+  React.useEffect(() => {
+    const slideInterval = setInterval(handleNext, 5000); // Change slide every 5 seconds
+    return () => clearInterval(slideInterval);
+  }, []);
+
+  return (
+    <div className="container">
+      <h3 className="text-center mb-4">Relevant Coursework</h3>
+      <div className="mx-auto" style={{ maxWidth: '600px' }}>
+      <div className="carousel-wrapper mb-4">
+        <div id="courseCarousel" className="carousel slide carousel-fade">
+          <div className="carousel-inner">
+            {courses.map((course, idx) => (
+              <div
+                className={`carousel-item ${idx === index ? 'active' : ''}`}
+                key={idx}
+                style={{
+                  transition: 'opacity 0.6s ease-in-out', // Custom transition
+                  opacity: idx === index ? 1 : 0
+                }}
+              >
+                <div
+                  className="d-flex flex-column justify-content-center align-items-center"
+                  style={{ 
+                    height: '300px',
+                    transform: idx === index ? 'translateX(0)' : 'translateX(50px)', // Sliding effect
+                    transition: 'transform 0.6s ease-in-out, opacity 0.6s ease-in-out'
+                   }}
+                >
+                  <h6 className="mb-3"><strong>{course.name}</strong></h6>
+                  <ul className="text-start" style={{ maxWidth: '283px' }}>
+                    {course.points.map((point, pIdx) => (
+                      <li 
+                      key={pIdx}
+                      style={{
+                        opacity: idx === index ? 1 : 0,
+                        transition: 'opacity 0.6s ease-in-out',
+                        transitionDelay: `${pIdx * 0.1}s` // Staggered animation for list items
+                      }}
+                      >
+                      {point}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <button
+            className="carousel-control-prev"
+            type="button"
+            data-bs-target="#courseCarousel"
+            data-bs-slide="prev"
+            onClick={handlePrev}
+          >
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+
+          <button
+            className="carousel-control-next"
+            type="button"
+            data-bs-target="#courseCarousel"
+            data-bs-slide="next"
+            onClick={handleNext}
+          >
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+          </button>
+        </div>
+        </div>
+      </div>
+    </div>
+  );
 
 }
 
@@ -278,7 +521,7 @@ function Projects() {
               <div className="text-center d-flex flex-wrap justify-content-center align-items-center mb-1">
                 <span className="skill-badge me-2 mb-0">Socket Programming</span>
                 <span className="skill-badge me-2 mb-0">Python</span>
-                <span className="skill-badge me-2 mb-0">Multithreading</span>
+                <span className="skill-badge me-2 mb-0" id="skills">Multithreading</span>
               </div>
             </div>
           </div>
@@ -291,7 +534,7 @@ function Projects() {
 
 function Skills() {
   return (
-    <div className="container" id="skills">
+    <div className="container" >
       <h2 className="text-center mb-4">Skills and Tools</h2>
 
       <div className="row">
@@ -630,6 +873,7 @@ function App() {
     <Navbar name="Jaime Castaneda"/>
     <Intro />
     <Education />
+    <RelevantCoursework />
     <Projects />
     <Skills />
     <Footer name="Jaime Castaneda" />

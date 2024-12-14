@@ -23,3 +23,17 @@
   background-color: #bbbbbb;
   /* slightly darker on hover */
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.carousel-wrapper {
+  border: 1px solid #d8d6d6;
+  /* Black border */
+  border-radius: 8px;
+  /* Optional: rounded corners */
+  padding: 10px;
+  /* Optional: space inside border */
+}
