@@ -19,11 +19,6 @@
   transition: background-color 0.2s ease;
 }
 
-.skill-badge:hover {
-  background-color: #bbbbbb;
-  /* slightly darker on hover */
-}
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   filter: invert(1);

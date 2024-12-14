@@ -38,6 +38,7 @@ import { IoMdChatbubbles } from "react-icons/io"; // chat icon
 import { FaGraduationCap } from "react-icons/fa"; // graduation cap icon
 import { FaTrophy } from "react-icons/fa"; // trophy icon
 // import { SiJunit5 } from "react-icons/si"; // junit icon. maybe will be used
+import { TbBrandWalmart } from "react-icons/tb"; // walmart icon
 
 
 
@@ -70,6 +71,11 @@ function Navbar(props) {
             <li className="nav-item">
               <a href="#education" className="nav-link">
                 Education
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#projects" className="nav-link">
+                Projects
               </a>
             </li>
             <li className="nav-item">
@@ -412,7 +418,7 @@ export function RelevantCoursework() {
             onClick={handleNext}
           >
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
+            <span className="visually-hidden" id="projects">Next</span>
           </button>
         </div>
         </div>
@@ -546,7 +552,8 @@ function Skills() {
               </div>
               <div>
                 <h6 className="mb-0"><strong>Python</strong></h6>
-                <p className="mb-2">Programming Language</p>
+                <p className="mb-0">Programming Language</p>
+                <p className="text-muted mb-0"><small>Started: Septemeber 2022</small></p>
               </div>
             </div>
           </div>
@@ -559,7 +566,8 @@ function Skills() {
               </div>
               <div>
                 <h6 className="mb-0"><strong>Java</strong></h6>
-                <p className="mb-2">Programming Language</p>
+                <p className="mb-0">Programming Language</p>
+                <p className="text-muted mb-0"><small>Started: March 2023</small></p>
               </div>
             </div>
           </div>
@@ -572,7 +580,8 @@ function Skills() {
               </div>
               <div>
                 <h6 className="mb-0"><strong>C</strong></h6>
-                <p className="mb-2">Programming Language</p>
+                <p className="mb-0">Programming Language</p>
+                <p className="text-muted mb-0"><small>Started: September 2023</small></p>
               </div>
             </div>
           </div>
@@ -585,7 +594,8 @@ function Skills() {
               </div>
               <div>
                 <h6 className="mb-0"><strong>JavaScript</strong></h6>
-                <p className="mb-2">Programming Language</p>
+                <p className="mb-0">Programming Language</p>
+                <p className="text-muted mb-0"><small>Started: August 2024</small></p>
               </div>
             </div>
           </div>
@@ -598,7 +608,8 @@ function Skills() {
               </div>
               <div>
                 <h6 className="mb-0"><strong>R</strong></h6>
-                <p className="mb-2">Programming/Scripting Language</p>
+                <p className="mb-0">Programming/Scripting Language</p>
+                <p className="text-muted mb-0"><small>Started: March 2023</small></p>
               </div>
             </div>
           </div>
@@ -611,7 +622,8 @@ function Skills() {
               </div>
               <div>
                 <h6 className="mb-0"><strong>Scala</strong></h6>
-                <p className="mb-2">Programming Language</p>
+                <p className="mb-0">Programming Language</p>
+                <p className="text-muted mb-0"><small>Started: January 2024</small></p>
               </div>
             </div>
           </div>
@@ -624,7 +636,8 @@ function Skills() {
               </div>
               <div>
                 <h6 className="mb-0"><strong>SAS</strong></h6>
-                <p className="mb-2">Programming Language</p>
+                <p className="mb-0">Programming Language</p>
+                <p className="text-muted mb-0"><small>Started: March 2024</small></p>
               </div>
             </div>
           </div>
@@ -637,7 +650,8 @@ function Skills() {
               </div>
               <div>
                 <h6 className="mb-0"><strong>SQL</strong></h6>
-                <p className="mb-2">Query Language</p>
+                <p className="mb-0">Query Language</p>
+                <p className="text-muted mb-0"><small>Started: January 2025</small></p>
               </div>
             </div>
           </div>
@@ -650,7 +664,8 @@ function Skills() {
               </div>
               <div>
                 <h6 className="mb-0"><strong>HTML</strong></h6>
-                <p className="mb-2">Markup Language</p>
+                <p className="mb-0">Markup Language</p>
+                <p className="text-muted mb-0"><small>Started: Septemeber 2023</small></p>
               </div>
             </div>
           </div>
@@ -663,7 +678,8 @@ function Skills() {
               </div>
               <div>
                 <h6 className="mb-0"><strong>CSS</strong></h6>
-                <p className="mb-2">Stylesheet Language</p>
+                <p className="mb-0">Stylesheet Language</p>
+                <p className="text-muted mb-0"><small>Started: Septemeber 2023</small></p>
               </div>
             </div>
           </div>
@@ -676,7 +692,8 @@ function Skills() {
               </div>
               <div>
                 <h6 className="mb-0"><strong>Django</strong></h6>
-                <p className="mb-2">Python Framework</p>
+                <p className="mb-0">Python Framework</p>
+                <p className="text-muted mb-0"><small>Started: Septemeber 2024</small></p>
               </div>
             </div>
           </div>
@@ -689,7 +706,8 @@ function Skills() {
               </div>
               <div>
                 <h6 className="mb-0"><strong>Bootstrap</strong></h6>
-                <p className="mb-2">CSS Framework</p>
+                <p className="mb-0">CSS Framework</p>
+                <p className="text-muted mb-0"><small>Started: Septemeber 2024</small></p>
               </div>
             </div>
           </div>
@@ -702,7 +720,8 @@ function Skills() {
               </div>
               <div>
                 <h6 className="mb-0"><strong>React</strong></h6>
-                <p className="mb-2">JavaScript Library</p>
+                <p className="mb-0">JavaScript Library</p>
+                <p className="text-muted mb-0"><small>Started: November 2024</small></p>
               </div>
             </div>
           </div>
@@ -715,7 +734,8 @@ function Skills() {
               </div>
               <div>
                 <h6 className="mb-0"><strong>Git</strong></h6>
-                <p className="mb-2">Version Control</p>
+                <p className="mb-0">Version Control</p>
+                <p className="text-muted mb-0"><small>Started: August 2023</small></p>
               </div>
             </div>
           </div>
@@ -728,7 +748,8 @@ function Skills() {
               </div>
               <div>
                 <h6 className="mb-0"><strong>IntelliJ</strong></h6>
-                <p className="mb-2">Java IDE</p>
+                <p className="mb-0">Java IDE</p>
+                <p className="text-muted mb-0"><small>Started: Septemeber 2023</small></p>
               </div>
             </div>
           </div>
@@ -741,7 +762,8 @@ function Skills() {
               </div>
               <div>
                 <h6 className="mb-0"><strong>Pycharm</strong></h6>
-                <p className="mb-2">Python IDE</p>
+                <p className="mb-0">Python IDE</p>
+                <p className="text-muted mb-0"><small>Started: February 2024</small></p>
               </div>
             </div>
           </div>
@@ -754,7 +776,8 @@ function Skills() {
               </div>
               <div>
                 <h6 className="mb-0"><strong>VS Code</strong></h6>
-                <p className="mb-2">Code Editor</p>
+                <p className="mb-0">Code Editor</p>
+                <p className="text-muted mb-0"><small>Started: Novemeber 2024</small></p>
               </div>
             </div>
           </div>
@@ -767,7 +790,8 @@ function Skills() {
               </div>
               <div>
                 <h6 className="mb-0"><strong>R Studio</strong></h6>
-                <p className="mb-2">R IDE</p>
+                <p className="mb-0">R IDE</p>
+                <p className="text-muted mb-0"><small>Started: March 2023</small></p>
               </div>
             </div>
           </div>
@@ -780,7 +804,8 @@ function Skills() {
               </div>
               <div>
                 <h6 className="mb-0"><strong>PostgreSQL</strong></h6>
-                <p className="mb-2">Relational Database</p>
+                <p className="mb-0">Relational Database</p>
+                <p className="text-muted mb-0"><small>Started: Septemeber 2024</small></p>
               </div>
             </div>
           </div>
@@ -793,7 +818,8 @@ function Skills() {
               </div>
               <div>
                 <h6 className="mb-0"><strong>Oracle</strong></h6>
-                <p className="mb-2">Relational Database</p>
+                <p className="mb-0">Relational Database</p>
+                <p className="text-muted mb-0"><small>Started: January 2023</small></p>
               </div>
             </div>
           </div>
@@ -806,7 +832,8 @@ function Skills() {
               </div>
               <div>
                 <h6 className="mb-0"><strong>Docker</strong></h6>
-                <p className="mb-2">Container Application Development</p>
+                <p className="mb-0">Container Application Development</p>
+                <p className="text-muted mb-0"><small>Started: Septemeber 2024</small></p>
               </div>
             </div>
           </div>
@@ -819,7 +846,8 @@ function Skills() {
               </div>
               <div>
                 <h6 className="mb-0"><strong>Postman</strong></h6>
-                <p className="mb-2">API Testing and Development</p>
+                <p className="mb-0">API Testing and Development</p>
+                <p className="text-muted mb-0"><small>Started: October 2024</small></p>
               </div>
             </div>
           </div>
@@ -832,7 +860,8 @@ function Skills() {
               </div>
               <div>
                 <h6 className="mb-0"><strong>AWS</strong></h6>
-                <p className="mb-2">Cloud Service</p>
+                <p className="mb-0">Cloud Service</p>
+                <p className="text-muted mb-0"><small>Started: Septemeber 2024</small></p>
               </div>
             </div>
           </div>
@@ -845,9 +874,46 @@ function Skills() {
               </div>
               <div>
                 <h6 className="mb-0"><strong>UiPath</strong></h6>
-                <p className="mb-2">Robotic Process Automation (RPA)</p>
+                <p className="mb-0">Robotic Process Automation (RPA)</p>
+                <p className="text-muted mb-0"><small>Started: January 2023</small></p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Experience() {
+  return (
+    <div className="container d-flex flex-column align-items-center py-5" id="experience">
+      <h2 className="text-center mb-4">Experience</h2>
+
+      <div className="card col-lg-6 col-md-8 col-sm-10 border-1 mb-4">
+        <div className="card-body d-flex align-items-center">
+          <div className="me-4">
+            <TbBrandWalmart size={55} />
+          </div>
+
+          <div>
+            <p className="text-muted mb-1 small">October 2021 - Present | Part-Time</p>
+            <h6 className="mb-1 fw-bold">Walmart</h6>
+            <p className="mb-0 text-muted">Replenishment Associate</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="card col-lg-6 col-md-8 col-sm-10 border-1 mb-4">
+        <div className="card-body d-flex align-items-center">
+          <div className="me-4">
+            <TbBrandWalmart size={55} />
+          </div>
+
+          <div>
+            <p className="text-muted mb-1 small">December 2019 - July 2021 | Part-Time</p>
+            <h6 className="mb-1 fw-bold">Walmart</h6>
+            <p className="mb-0 text-muted">Cart Attendant</p>
           </div>
         </div>
       </div>
@@ -876,6 +942,7 @@ function App() {
     <RelevantCoursework />
     <Projects />
     <Skills />
+    <Experience />
     <Footer name="Jaime Castaneda" />
     </>
   );
