@@ -32,3 +32,127 @@
   padding: 10px;
   /* Optional: space inside border */
 }
+
+.icon-container svg {
+  transition: color 0.3s ease;
+  color: #000;
+}
+
+.skill-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth animation */
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  /* Moves card 10px upward */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  /* Adds a deeper shadow */
+}
+
+.walmart-icon:hover svg {
+  color: #ffc220;
+}
+
+.python-icon:hover svg {
+  color: #3776AB;
+}
+
+.java-icon:hover svg {
+  color: #f89820;
+}
+
+.c-icon:hover svg {
+  color: #3776AB;
+}
+
+.js-icon:hover svg {
+  color: #F7DF1E;
+}
+
+.r-icon:hover svg {
+  color: #165CAA;
+}
+
+.scala-icon:hover svg {
+  color: #DE3423;
+}
+
+.sql-icon:hover svg {
+  color: #00758f;
+}
+
+.html-icon:hover svg {
+  color: #e34c26;
+}
+
+.css-icon:hover svg {
+  color: #264de4;
+}
+
+.django-icon:hover svg {
+  color: #092E20;
+}
+
+.bootstrap-icon:hover svg {
+  color: #563d7c;
+}
+
+.react-icon:hover svg {
+  color: #61DAFB;
+}
+
+.git-icon:hover svg {
+  color: #F1502F;
+}
+
+.jetbrains-icon:hover svg {
+  color: #000000;
+}
+
+.vs-icon:hover svg {
+  color: #0078d7;
+}
+
+.rstudio:hover svg {
+  color: #4AA4DE;
+}
+
+.postgresql-icon:hover svg {
+  color: #0064a5;
+}
+
+.oracle-icon:hover svg {
+  color: #C74634;
+}
+
+.docker-icon:hover svg {
+  color: #0db7ed;
+}
+
+.postman-icon:hover svg {
+  color: #EF5B25;
+}
+
+.aws-icon:hover svg {
+  color: #FF9900;
+}
+
+.uipath-icon:hover svg {
+  color: #FF4D00;
+}
+
+.jira-icon:hover svg {
+  color: #0052cc;
+}
+
+.junit-icon:hover svg {
+  color: #D52B1E;
+}
+
+.selenium-icon:hover svg {
+  color: #59EB00;
+}
