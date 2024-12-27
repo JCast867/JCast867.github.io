@@ -174,9 +174,9 @@ function Education() {
           <div className="col-lg-6">
             <div className="card mb-4">
               <div className="card-body">
-                <div className="text-center mb-3"><FaTrophy size={25} /> <strong>GPA and Achievements</strong></div>
+                <div className="text-center mb-3"><FaTrophy size={25} color='#FFD700'/> <strong>GPA and Achievements</strong></div>
                 <h6 className="text-center mb-2">GPA: <u>3.48</u>/4.00</h6>
-                <h6 className="text-center mb-4">3-time Dean's List Student</h6>
+                <h6 className="text-center mb-4">DePaul's Computer Science Society</h6>
               </div>
             </div>
           </div>
@@ -546,7 +546,7 @@ function Skills() {
 
       <div className="row">
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card python-icon">
+          <div className="card mb-4 skill-card icon-container python-icon">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <FaPython size={50} />
@@ -560,7 +560,7 @@ function Skills() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card java-icon">
+          <div className="card mb-4 skill-card icon-container java-icon">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <FaJava size={50} />
@@ -574,7 +574,7 @@ function Skills() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card c-icon">
+          <div className="card mb-4 skill-card icon-container c-icon">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <SiC size={50} />
@@ -588,7 +588,7 @@ function Skills() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card js-icon">
+          <div className="card mb-4 skill-card icon-container js-icon">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <SiJavascript size={50} />
@@ -602,7 +602,7 @@ function Skills() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card r-icon">
+          <div className="card mb-4 skill-card icon-container r-icon">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <SiR size={50} />
@@ -616,7 +616,7 @@ function Skills() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card scala-icon">
+          <div className="card mb-4 skill-card icon-container scala-icon">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <DiScala size={50} />
@@ -644,7 +644,7 @@ function Skills() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card sql-icon">
+          <div className="card mb-4 skill-card icon-container sql-icon">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <TbSql size={50} />
@@ -658,7 +658,7 @@ function Skills() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card html-icon">
+          <div className="card mb-4 skill-card icon-container html-icon">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <FaHtml5 size={50}/>
@@ -672,7 +672,7 @@ function Skills() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card css-icon">
+          <div className="card mb-4 skill-card icon-container css-icon">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <FaCss3Alt size={50}/>
@@ -686,7 +686,7 @@ function Skills() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card django-icon">
+          <div className="card mb-4 skill-card icon-container django-icon">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <SiDjango size={50}/>
@@ -700,7 +700,7 @@ function Skills() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card bootstrap-icon">
+          <div className="card mb-4 skill-card icon-container bootstrap-icon">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <FaBootstrap size={50}/>
@@ -714,7 +714,7 @@ function Skills() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card react-icon">
+          <div className="card mb-4 skill-card icon-container react-icon">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <FaReact size={50}/>
@@ -728,7 +728,7 @@ function Skills() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card git-icon">
+          <div className="card mb-4 skill-card icon-container git-icon">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <FaGitAlt size={50}/>
@@ -742,7 +742,7 @@ function Skills() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card jetbrains-icon">
+          <div className="card mb-4 skill-card icon-container jetbrains-icon">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <SiIntellijidea size={50}/>
@@ -756,7 +756,7 @@ function Skills() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card jetbrains-icon">
+          <div className="card mb-4 skill-card icon-container jetbrains-icon">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <SiPycharm size={50}/>
@@ -770,7 +770,7 @@ function Skills() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card vs-icon">
+          <div className="card mb-4 skill-card icon-container vs-icon">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <VscVscodeInsiders size={50}/>
@@ -784,7 +784,7 @@ function Skills() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card rstudio">
+          <div className="card mb-4 skill-card icon-container rstudio">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <SiRstudioide size={50}/>
@@ -798,7 +798,7 @@ function Skills() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card postgresql-icon">
+          <div className="card mb-4 skill-card icon-container postgresql-icon">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <BiLogoPostgresql size={50}/>
@@ -812,7 +812,7 @@ function Skills() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card oracle-icon">
+          <div className="card mb-4 skill-card icon-container oracle-icon">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <SiOracle size={50}/>
@@ -826,7 +826,7 @@ function Skills() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card docker-icon">
+          <div className="card mb-4 skill-card icon-container docker-icon">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <FaDocker size={50}/>
@@ -840,7 +840,7 @@ function Skills() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card postman-icon">
+          <div className="card mb-4 skill-card icon-container postman-icon">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <SiPostman size={50}/>
@@ -854,7 +854,7 @@ function Skills() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card aws-icon">
+          <div className="card mb-4 skill-card icon-container aws-icon">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <FaAws size={50}/>
@@ -868,7 +868,7 @@ function Skills() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card uipath-icon">
+          <div className="card mb-4 skill-card icon-container uipath-icon">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <SiUipath size={50}/>
@@ -882,7 +882,7 @@ function Skills() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card jira-icon">
+          <div className="card mb-4 skill-card icon-container jira-icon">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <SiJira size={50}/>
@@ -896,7 +896,7 @@ function Skills() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card junit-icon">
+          <div className="card mb-4 skill-card icon-container junit-icon">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <SiJunit5 size={50}/>
@@ -910,7 +910,7 @@ function Skills() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="card mb-4 skill-card selenium-icon">
+          <div className="card mb-4 skill-card icon-container selenium-icon">
             <div className="card-body d-flex align-items-center">
               <div className="me-3">
                 <SiSelenium size={50}/>
@@ -971,6 +971,8 @@ function Footer(props) {
         <span className="text-muted">
           © {props.name} | All Rights Reserved
         </span>
+        <p className="text-center text-muted mb-0"><a href="mailto:your-email@example.com" className="text-muted link-underline-light">jaiimecast04@gmail.com</a></p>
+        <p className="text-center text-muted mb-0">Last Updated: 12/26/24</p>
       </div>
     </footer>
   );
