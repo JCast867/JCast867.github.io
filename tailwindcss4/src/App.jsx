@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar.jsx";
 import Intro from "./components/Intro.jsx";
 import Education from "./components/Education.jsx";
 import Skills from "./components/Skills.jsx";
+import Experience from "./components/Experience.jsx";
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
           <Intro />
           <Education />
           <Skills />
+          <Experience />
       </>
 
   );
