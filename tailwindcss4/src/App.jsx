@@ -4,6 +4,7 @@ import Intro from "./components/Intro.jsx";
 import Education from "./components/Education.jsx";
 import Skills from "./components/Skills.jsx";
 import Experience from "./components/Experience.jsx";
+import {Projects} from "./components/Projects.jsx";
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
           <Navbar />
           <Intro />
           <Education />
+          <Projects />
           <Skills />
           <Experience />
       </>

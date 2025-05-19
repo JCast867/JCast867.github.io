@@ -8,7 +8,7 @@ export default function Experience() {
     ];
 
     return (
-        <div className="container mx-auto p-4">
+        <div className="container mx-auto p-4 py-8">
             <h1 className="text-4xl text-center py-8">Experience</h1>
 
             <div className="flex flex-col gap-4">
